@@ -6,442 +6,568 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  image-rendering: auto; }
+  image-rendering: auto;
+}
 
 ::-webkit-scrollbar {
-  width: 8px; }
+  width: 8px;
+}
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0); }
+  background: rgba(0, 0, 0, 0);
+}
 
 ::-webkit-scrollbar-thumb {
   background: #909090;
-  border-radius: 8px; }
+  border-radius: 8px;
+}
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #606060; }
+  background: #606060;
+}
 
 body {
-  line-height: 1.2; }
+  line-height: 1.2;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 th {
   font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
   padding: 1rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 td {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 1rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 .l-heading {
   font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
-  font-size: 2.25rem; }
+  font-size: 2.25rem;
+}
 
 .m-heading {
   font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .overflow {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 header {
   position: relative;
   width: 100%;
-  height: auto; }
-  header .navwrap {
-    position: absolute;
-    width: 100%;
-    z-index: 6; }
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    padding: 0.5rem;
-    margin: auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    header nav h2 {
-      font-family: "Gilroy-Medium", sans-serif;
-      font-weight: 400; }
-  header .logo {
-    display: inline-block;
-    left: 0;
-    padding: 1rem 0;
-    color: white; }
-  header ul {
-    display: block;
-    text-align: center;
-    right: 0; }
-    header ul:hover .current::before {
-      transform: scaleX(0); }
-  header li {
-    display: inline-block;
-    text-align: center;
-    padding: 0rem 0.5rem; }
-    header li:last-child {
-      padding-right: 0rem; }
-  header a {
-    position: relative;
-    display: inline-block;
-    color: white;
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem;
-    font-family: "General Sans", sans-serif; }
-    header a::before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 1.5px;
-      width: 100%;
-      transform: scaleX(0);
-      background-color: white;
-      left: 0;
-      bottom: 0px;
-      transform-origin: center;
-      transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28); }
-    header a:hover::before {
-      transform: scaleX(1); }
-    header a.current::before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 1.5px;
-      width: 100%;
-      background-color: white;
-      transform: scaleX(1);
-      left: 0;
-      bottom: 0px; }
-  header .homepage {
-    position: relative;
-    background: url("../Resources/Main/Showcase_M4.jpg") no-repeat center bottom 40%/cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-attachment: fixed;
-    filter: brightness(150%); }
-    header .homepage .gradient {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background: linear-gradient(180deg, rgba(226, 39, 24, 0.3) 20%, rgba(0, 102, 177, 0.3) 100%) no-repeat center center/cover;
-      z-index: 2;
-      mix-blend-mode: color; }
-    header .homepage .showcase-info {
-      padding: 0rem 5rem;
-      color: white;
-      z-index: 4; }
-      header .homepage .showcase-info h1 {
-        font-size: 5rem;
-        font-family: "Gilroy-Bold", sans-serif;
-        font-weight: 400; }
-      header .homepage .showcase-info h3 {
-        font-size: 2rem;
-        font-family: "Gilroy-Regular", sans-serif;
-        font-weight: 400;
-        margin-top: 0.5rem; }
-      header .homepage .showcase-info .focus {
-        font-size: 6rem;
-        font-family: "Gilroy-Regular", sans-serif;
-        font-weight: 400;
-        margin-top: 1rem; }
-  header .msports {
-    position: absolute;
-    display: inline-block;
-    right: 1rem;
-    bottom: 0;
-    z-index: 4;
-    padding: 1rem; }
-    header .msports .mlogo {
-      background: url("../Resources/Main/M_perf.png") no-repeat center center/contain;
-      width: 215px;
-      height: 35px; }
-    header .msports p {
-      color: white;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 0.85rem; }
+  height: auto;
+}
+header .navwrap {
+  position: absolute;
+  width: 100%;
+  z-index: 6;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0.5rem;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header nav h2 {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: 400;
+}
+header .logo {
+  display: inline-block;
+  left: 0;
+  padding: 1rem 0;
+  color: white;
+}
+header ul {
+  display: block;
+  text-align: center;
+  right: 0;
+}
+header ul:hover .current::before {
+  transform: scaleX(0);
+}
+header li {
+  display: inline-block;
+  text-align: center;
+  padding: 0rem 0.5rem;
+}
+header li:last-child {
+  padding-right: 0rem;
+}
+header a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-family: "General Sans", sans-serif;
+}
+header a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: white;
+  left: 0;
+  bottom: 0px;
+  transform-origin: center;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+header a:hover::before {
+  transform: scaleX(1);
+}
+header a.current::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(1);
+  left: 0;
+  bottom: 0px;
+}
+header .homepage {
+  position: relative;
+  background: url("../Resources/Main/Showcase_M4.jpg") no-repeat center bottom
+    40% / cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-attachment: fixed;
+  filter: brightness(150%);
+}
+header .homepage .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(226, 39, 24, 0.3) 20%,
+      rgba(0, 102, 177, 0.3) 100%
+    )
+    no-repeat center center/cover;
+  z-index: 2;
+  mix-blend-mode: color;
+}
+header .homepage .showcase-info {
+  padding: 0rem 5rem;
+  color: white;
+  z-index: 4;
+}
+header .homepage .showcase-info h1 {
+  font-size: 5rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 400;
+}
+header .homepage .showcase-info h3 {
+  font-size: 2rem;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+header .homepage .showcase-info .focus {
+  font-size: 6rem;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+header .msports {
+  position: absolute;
+  display: inline-block;
+  right: 1rem;
+  bottom: 0;
+  z-index: 4;
+  padding: 1rem;
+}
+header .msports .mlogo {
+  background: url("../Resources/Main/M_perf.png") no-repeat center
+    center/contain;
+  width: 215px;
+  height: 35px;
+}
+header .msports p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
 
 .nav2 {
   padding: 0.5rem 0rem;
   position: sticky;
   top: 0;
   background: black;
-  z-index: 15; }
-  .nav2 ul {
-    display: block;
-    text-align: center;
-    right: 0; }
-  .nav2 li {
-    display: inline-block;
-    text-align: center;
-    padding: 0rem 0.5rem; }
-  .nav2 a {
-    display: inline-block;
-    position: relative;
-    color: white;
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem;
-    font-family: "General Sans", sans-serif; }
-    .nav2 a::before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 1.5px;
-      width: 100%;
-      transform: scaleX(0);
-      background-color: white;
-      left: 0;
-      bottom: 0px;
-      transform-origin: center;
-      transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28); }
-    .nav2 a:hover::before {
-      transform: scaleX(1); }
+  z-index: 15;
+}
+.nav2 ul {
+  display: block;
+  text-align: center;
+  right: 0;
+}
+.nav2 li {
+  display: inline-block;
+  text-align: center;
+  padding: 0rem 0.5rem;
+}
+.nav2 a {
+  display: inline-block;
+  position: relative;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-family: "General Sans", sans-serif;
+}
+.nav2 a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: white;
+  left: 0;
+  bottom: 0px;
+  transform-origin: center;
+  transition: 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.nav2 a:hover::before {
+  transform: scaleX(1);
+}
 
 .models {
-  background: url("../Resources/Main/M4_models.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/M4_models.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  height: 90vh; }
+  height: 90vh;
+}
 
 .modelinfo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 4rem 2rem;
-  justify-content: center; }
-  .modelinfo .infoA {
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid black; }
-  .modelinfo .infoB {
-    padding: 1rem;
-    display: block;
-    margin: auto; }
+  justify-content: center;
+}
+.modelinfo .infoA {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+}
+.modelinfo .infoB {
+  padding: 1rem;
+  display: block;
+  margin: auto;
+}
 
 .performanceinfo {
   background-color: black;
   text-align: center;
   padding: 2rem;
-  color: white; }
-  .performanceinfo h2,
-  .performanceinfo p {
-    padding: 0.75rem 0rem; }
+  color: white;
+}
+.performanceinfo h2,
+.performanceinfo p {
+  padding: 0.75rem 0rem;
+}
 
 .performance {
-  background: url("../Resources/Main/Performance_M4.jpg") no-repeat center bottom/cover;
+  background: url("../Resources/Main/Performance_M4.jpg") no-repeat center
+    bottom/cover;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .gridlines {
   background-color: #fff;
-  background-image: repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 120px), repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 120px);
+  background-image: repeating-linear-gradient(
+      to right,
+      black 0,
+      black 1px,
+      transparent 1px,
+      transparent 120px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      black 0,
+      black 1px,
+      transparent 1px,
+      transparent 120px
+    );
   background-repeat: repeat;
-  padding: 3rem 2.5rem; }
-  .gridlines > div {
-    margin-bottom: 2rem; }
-    .gridlines > div:last-child {
-      margin-bottom: 0rem; }
-  .gridlines > div > div:first-child > div:first-child {
-    transform: scale(1);
-    transition: transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86); }
-  .gridlines > div > div:first-child > div:first-child:hover {
-    transform: scale(1.2); }
+  padding: 3rem 2.5rem;
+}
+.gridlines > div {
+  margin-bottom: 2rem;
+}
+.gridlines > div:last-child {
+  margin-bottom: 0rem;
+}
+.gridlines > div > div:first-child > div:first-child {
+  transform: scale(1);
+  transition: transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+.gridlines > div > div:first-child > div:first-child:hover {
+  transform: scale(1.2);
+}
 
 .MPowerwrap {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; }
+  grid-template-columns: 1.5fr 1fr;
+}
 
 .MPower {
-  background: url("../Resources/Main/Performance_MPower.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Performance_MPower.jpg") no-repeat center
+    center/cover;
   width: 100%;
   min-height: 60vh;
-  position: relative; }
-  .MPower .gradient {
-    position: absolute;
-    background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-    height: 100%; }
+  position: relative;
+}
+.MPower .gradient {
+  position: absolute;
+  background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 100%;
+}
 
 .MPowerinfo {
   background-color: black;
   color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
-  .MPowerinfo h2 {
-    padding-bottom: 0.75rem; }
+  align-items: center;
+}
+.MPowerinfo h2 {
+  padding-bottom: 0.75rem;
+}
 
 .TransmissionWrap {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; }
+  grid-template-columns: 1.5fr 1fr;
+}
 
 .Transmission {
-  background: url("../Resources/Main/Performance_Transmission.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Performance_Transmission.jpg") no-repeat
+    center center/cover;
   width: 100%;
-  min-height: 60vh; }
-  .Transmission .gradient {
-    position: absolute;
-    background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-    height: 100%; }
+  min-height: 60vh;
+}
+.Transmission .gradient {
+  position: absolute;
+  background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 100%;
+}
 
 .Transmissioninfo {
   background-color: black;
   color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
-  .Transmissioninfo h2 {
-    padding-bottom: 0.75rem; }
+  align-items: center;
+}
+.Transmissioninfo h2 {
+  padding-bottom: 0.75rem;
+}
 
 .SuspensionWrap {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; }
+  grid-template-columns: 1.5fr 1fr;
+}
 
 .Suspension {
-  background: url("../Resources/Main/Performance_Suspension.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Performance_Suspension.jpg") no-repeat
+    center center/cover;
   width: 100%;
-  min-height: 60vh; }
-  .Suspension .gradient {
-    position: absolute;
-    background: linear-gradient(270deg, black 14%, rgba(0, 0, 0, 0) 70%);
-    width: 100%;
-    height: 100%; }
+  min-height: 60vh;
+}
+.Suspension .gradient {
+  position: absolute;
+  background: linear-gradient(270deg, black 14%, rgba(0, 0, 0, 0) 70%);
+  width: 100%;
+  height: 100%;
+}
 
 .Suspensioninfo {
   background-color: black;
   color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
-  .Suspensioninfo h2 {
-    padding-bottom: 0.75rem; }
+  align-items: center;
+}
+.Suspensioninfo h2 {
+  padding-bottom: 0.75rem;
+}
 
 .BrakesWrap {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; }
+  grid-template-columns: 1.5fr 1fr;
+}
 
 .Brakes {
-  background: url("../Resources/Main/Performance_Brakes.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Performance_Brakes.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  min-height: 60vh; }
-  .Brakes .gradient {
-    position: absolute;
-    background: linear-gradient(270deg, black 20%, rgba(0, 0, 0, 0) 80%);
-    width: 100%;
-    height: 100%; }
+  min-height: 60vh;
+}
+.Brakes .gradient {
+  position: absolute;
+  background: linear-gradient(270deg, black 20%, rgba(0, 0, 0, 0) 80%);
+  width: 100%;
+  height: 100%;
+}
 
 .Brakesinfo {
   background-color: black;
   color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
-  .Brakesinfo h2 {
-    padding-bottom: 0.75rem; }
+  align-items: center;
+}
+.Brakesinfo h2 {
+  padding-bottom: 0.75rem;
+}
 
 .Designwrap p {
   width: 75%;
-  margin: auto; }
+  margin: auto;
+}
 
 .designinfo {
   background-color: black;
   text-align: center;
   padding: 2rem;
-  color: white; }
-  .designinfo h2,
-  .designinfo p {
-    padding: 0.75rem 0rem; }
+  color: white;
+}
+.designinfo h2,
+.designinfo p {
+  padding: 0.75rem 0rem;
+}
 
 .design {
-  background: url("../Resources/Main/Design_M4.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Design_M4.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  height: 60vh; }
+  height: 60vh;
+}
 
 .Evolvewrap {
   background-color: #000;
-  color: white; }
+  color: white;
+}
 
 .Evolve {
-  background: url("../Resources/Main/Design_Evolve.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Design_Evolve.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  min-height: 80vh; }
+  min-height: 80vh;
+}
 
 .Evolveinfo {
   padding: 1.5rem 1rem;
-  text-align: center; }
-  .Evolveinfo h2 {
-    margin-bottom: 1rem; }
+  text-align: center;
+}
+.Evolveinfo h2 {
+  margin-bottom: 1rem;
+}
 
 .Aerowrap {
   background-color: #000;
-  color: white; }
+  color: white;
+}
 
 .Aero {
-  background: url("../Resources/Main/Design_Aero.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Design_Aero.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  min-height: 80vh; }
+  min-height: 80vh;
+}
 
 .Aeroinfo {
   padding: 1.5rem 1rem;
-  text-align: center; }
-  .Aeroinfo h2 {
-    margin-bottom: 1rem; }
+  text-align: center;
+}
+.Aeroinfo h2 {
+  margin-bottom: 1rem;
+}
 
 .Stylewrap {
   background-color: #000;
-  color: white; }
+  color: white;
+}
 
 .Style {
-  background: url("../Resources/Main/Design_Style.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Design_Style.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  min-height: 80vh; }
+  min-height: 80vh;
+}
 
 .Styleinfo {
   padding: 1.5rem 1rem;
-  text-align: center; }
-  .Styleinfo h2 {
-    margin-bottom: 1rem; }
+  text-align: center;
+}
+.Styleinfo h2 {
+  margin-bottom: 1rem;
+}
 
 .Seatswrap {
   background-color: #000;
-  color: white; }
+  color: white;
+}
 
 .Seats {
-  background: url("../Resources/Main/Design_Seats.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Design_Seats.jpg") no-repeat center
+    center/cover;
   width: 100%;
-  min-height: 80vh; }
+  min-height: 80vh;
+}
 
 .Seatsinfo {
   padding: 1.5rem 1rem;
-  text-align: center; }
-  .Seatsinfo h2 {
-    margin-bottom: 1rem; }
+  text-align: center;
+}
+.Seatsinfo h2 {
+  margin-bottom: 1rem;
+}
 
 footer {
   width: 100%;
@@ -449,46 +575,56 @@ footer {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  footer .buttons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    height: 80%;
-    margin: 2rem auto; }
-  footer .btn a {
-    display: inline-block;
-    padding: 1rem 2rem;
-    color: white;
-    background-color: #1c69d3;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500; }
-  footer .footerwrap {
-    height: 100%;
-    width: 100%; }
-  footer p {
-    color: white; }
-  footer .BMW {
-    width: 100%;
-    height: auto;
-    padding: 1.5rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid rgba(255, 255, 255, 0.2); }
-  footer .social-links a {
-    padding: 1rem;
-    color: white;
-    font-size: 1.25rem; }
-    footer .social-links a:last-child {
-      padding-right: 0rem; }
+  align-items: center;
+}
+footer .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+  margin: 2rem auto;
+}
+footer .btn a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #1c69d3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+footer .footerwrap {
+  height: 100%;
+  width: 100%;
+}
+footer p {
+  color: white;
+}
+footer .BMW {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+footer .social-links a {
+  padding: 1rem;
+  color: white;
+  font-size: 1.25rem;
+}
+footer .social-links a:last-child {
+  padding-right: 0rem;
+}
 
 .FeaturesShowcase {
-  background: url("../Resources/Main/Features_Showcase.jpg") no-repeat center center/cover;
+  background: url("../Resources/Main/Features_Showcase.jpg") no-repeat center
+    center/cover;
   width: 100%;
   height: 100vh;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
 .options {
   height: 80px;
@@ -497,325 +633,408 @@ footer {
   grid-template-columns: 1fr 1fr;
   margin: auto;
   margin-top: 4rem;
-  box-shadow: 0px 0px 10rem 10rem rgba(0, 0, 0, 0.1); }
-  .options > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer; }
-    .options > div h2 {
-      font-family: "Gilroy-Bold", sans-serif;
-      font-weight: 400; }
-  .options .featuresinfo {
-    height: 100%;
-    color: white;
-    background-color: black;
-    transition: background-color 0.4s ease-out; }
-  .options .featuresinfo_active {
-    color: black;
-    background-color: white; }
-    .options .featuresinfo_active:hover {
-      background-color: rgba(0, 0, 0, 0.2); }
-  .options .specifications {
-    height: 100%;
-    color: #000;
-    background-color: white;
-    transition: background-color 0.4s ease-out; }
-    .options .specifications:hover {
-      background-color: rgba(0, 0, 0, 0.2); }
-  .options .specifications_active {
-    color: white;
-    background-color: black; }
-    .options .specifications_active:hover {
-      background-color: black; }
+  box-shadow: 0px 0px 10rem 10rem rgba(0, 0, 0, 0.1);
+}
+.options > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.options > div h2 {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 400;
+}
+.options .featuresinfo {
+  height: 100%;
+  color: white;
+  background-color: black;
+  transition: background-color 0.4s ease-out;
+}
+.options .featuresinfo_active {
+  color: black;
+  background-color: white;
+}
+.options .featuresinfo_active:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.options .specifications {
+  height: 100%;
+  color: #000;
+  background-color: white;
+  transition: background-color 0.4s ease-out;
+}
+.options .specifications:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.options .specifications_active {
+  color: white;
+  background-color: black;
+}
+.options .specifications_active:hover {
+  background-color: black;
+}
 
 .Features {
   margin-top: 4rem;
-  padding: 4rem; }
-  .Features-Title {
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Gilroy-Regular", sans-serif;
-    font-weight: 400; }
-  .Features-Grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 2rem;
-    padding: 4rem; }
+  padding: 4rem;
+}
+.Features-Title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+}
+.Features-Grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 4rem;
+}
 
 .FeatureTitle {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100px;
-  align-self: flex-start; }
-  .FeatureTitle h2 {
-    font-size: 2rem;
-    font-family: "Gilroy-Regular", sans-serif;
-    font-weight: 400; }
+  align-self: flex-start;
+}
+.FeatureTitle h2 {
+  font-size: 2rem;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+}
 
 .borderbottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0.5rem 0rem; }
-  .borderbottom .arrow,
-  .borderbottom .arrowsecond,
-  .borderbottom .arrowthird,
-  .borderbottom .arrowfourth,
-  .borderbottom .arrowfifth,
-  .borderbottom .arrowsixth,
-  .borderbottom .arrowseventh,
-  .borderbottom .arroweight,
-  .borderbottom .arrownine,
-  .borderbottom .arrowten {
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    top: 30px;
-    right: 10px; }
-  .borderbottom .lineone {
-    position: absolute;
-    top: 14px;
-    right: 5px;
-    width: 50%;
-    height: 4px;
-    background-color: black;
-    transform: rotate(-45deg);
-    transition: transform 0.25s cubic-bezier(0.77, 0, 0.18, 1); }
-  .borderbottom .linetwo {
-    position: absolute;
-    top: 14px;
-    left: 5px;
-    width: 50%;
-    height: 4px;
-    background-color: black;
-    transform: rotate(45deg);
-    transition: transform 0.2s cubic-bezier(0.77, 0, 0.18, 1); }
-  .borderbottom .arrowexpanded .lineone {
-    transform: rotate(-135deg); }
-  .borderbottom .arrowexpanded .linetwo {
-    transform: rotate(135deg); }
-  .borderbottom h2 {
-    font-size: 2.5rem;
-    font-family: "Gilroy-Bold", sans-serif;
-    font-weight: 400;
-    margin-bottom: 0.5rem; }
+  padding: 0.5rem 0rem;
+}
+.borderbottom .arrow,
+.borderbottom .arrowsecond,
+.borderbottom .arrowthird,
+.borderbottom .arrowfourth,
+.borderbottom .arrowfifth,
+.borderbottom .arrowsixth,
+.borderbottom .arrowseventh,
+.borderbottom .arroweight,
+.borderbottom .arrownine,
+.borderbottom .arrowten {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: 30px;
+  right: 10px;
+}
+.borderbottom .lineone {
+  position: absolute;
+  top: 14px;
+  right: 5px;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  transform: rotate(-45deg);
+  transition: transform 0.25s cubic-bezier(0.77, 0, 0.18, 1);
+}
+.borderbottom .linetwo {
+  position: absolute;
+  top: 14px;
+  left: 5px;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  transform: rotate(45deg);
+  transition: transform 0.2s cubic-bezier(0.77, 0, 0.18, 1);
+}
+.borderbottom .arrowexpanded .lineone {
+  transform: rotate(-135deg);
+}
+.borderbottom .arrowexpanded .linetwo {
+  transform: rotate(135deg);
+}
+.borderbottom h2 {
+  font-size: 2.5rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
 
 .details {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem 5rem; }
-  .details p {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-    .details p:last-child, .details p:nth-last-child(2) {
-      margin-bottom: 0rem;
-      border-bottom: none; }
+  gap: 3rem 5rem;
+}
+.details p {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.details p:last-child,
+.details p:nth-last-child(2) {
+  margin-bottom: 0rem;
+  border-bottom: none;
+}
 
 .expandperf {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureOneA {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureOneA-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureOneA-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .handling {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandhandling {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureOneB {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureOneB-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureOneB-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .expandexterior {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureTwoA {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureTwoA-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureTwoA-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .interior {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandinterior {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureTwoB {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureTwoB-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureTwoB-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .expandconnectivity {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureThreeA {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureThreeA-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureThreeA-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .Audio {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandaudio {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureThreeB {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureThreeB-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureThreeB-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .Instrument {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandinstrument {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureThreeC {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureThreeC-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureThreeC-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .Comfort {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandcomfort {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureThreeD {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureThreeD-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureThreeD-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .expandsafety {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureFourA {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureFourA-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureFourA-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .warranty {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .expandwarranty {
-  position: relative; }
+  position: relative;
+}
 
 .FeatureFourB {
   height: 0rem;
   transition: all 0.4s ease-out;
-  overflow: hidden; }
-  .FeatureFourB-expanded {
-    height: auto;
-    margin-top: 3rem; }
+  overflow: hidden;
+}
+.FeatureFourB-expanded {
+  height: auto;
+  margin-top: 3rem;
+}
 
 .Specs {
   margin-top: 8rem;
-  display: none; }
-  .Specs h2 {
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Gilroy-Regular", sans-serif;
-    font-weight: 400; }
-  .Specs h4 {
-    margin-bottom: 2rem; }
-  .Specs h3 {
-    font-size: 1rem;
-    font-family: "Gilroy-Regular", sans-serif;
-    font-weight: 400;
-    margin-bottom: 0.25rem; }
-  .Specs p {
-    font-size: 1.15rem;
-    font-family: "Gilroy-Bold", sans-serif;
-    font-weight: 400;
-    margin-bottom: 4rem; }
-  .Specs .box1 {
-    padding: 4rem 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .Specs .box2 {
-    padding: 4rem 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .Specs .box3 {
-    padding: 4rem 6rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .Specs .ExteriorShowcase {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "ext1 ext1" "ext2 ext3";
-    image-rendering: auto; }
-    .Specs .ExteriorShowcase .ext1 {
-      background: url("../Resources/Main/M4_Ex1.webp") no-repeat center center/cover;
-      width: 40vw;
-      height: 250px;
-      margin: auto; }
-    .Specs .ExteriorShowcase .ext1-wrap {
-      grid-area: ext1; }
-    .Specs .ExteriorShowcase .ext2 {
-      background: url("../Resources/Main/M4_Ex2.webp") no-repeat center center/cover;
-      width: 20vw;
-      height: 250px;
-      margin: auto; }
-    .Specs .ExteriorShowcase .ext2-wrap {
-      grid-area: ext2; }
-    .Specs .ExteriorShowcase .ext3 {
-      background: url("../Resources/Main/M4_Ex3.webp") no-repeat center center/cover;
-      width: 20vw;
-      height: 250px;
-      margin: auto; }
-    .Specs .ExteriorShowcase .ext3-wrap {
-      grid-area: ext3; }
-  .Specs .int-wrap {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .Specs .int {
-    background: url("../Resources/Main/M4_interior.webp") no-repeat center center/cover;
-    width: 40vw;
-    height: 250px; }
+  display: none;
+}
+.Specs h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+}
+.Specs h4 {
+  margin-bottom: 2rem;
+}
+.Specs h3 {
+  font-size: 1rem;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+.Specs p {
+  font-size: 1.15rem;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.Specs .box1 {
+  padding: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Specs .box2 {
+  padding: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Specs .box3 {
+  padding: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Specs .ExteriorShowcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "ext1 ext1"
+    "ext2 ext3";
+  image-rendering: auto;
+}
+.Specs .ExteriorShowcase .ext1 {
+  background: url("../Resources/Main/M4_Ex1.webp") no-repeat center center/cover;
+  width: 40vw;
+  height: 250px;
+  margin: auto;
+}
+.Specs .ExteriorShowcase .ext1-wrap {
+  grid-area: ext1;
+}
+.Specs .ExteriorShowcase .ext2 {
+  background: url("../Resources/Main/M4_Ex2.webp") no-repeat center center/cover;
+  width: 20vw;
+  height: 250px;
+  margin: auto;
+}
+.Specs .ExteriorShowcase .ext2-wrap {
+  grid-area: ext2;
+}
+.Specs .ExteriorShowcase .ext3 {
+  background: url("../Resources/Main/M4_Ex3.webp") no-repeat center center/cover;
+  width: 20vw;
+  height: 250px;
+  margin: auto;
+}
+.Specs .ExteriorShowcase .ext3-wrap {
+  grid-area: ext3;
+}
+.Specs .int-wrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Specs .int {
+  background: url("../Resources/Main/M4_interior.webp") no-repeat center
+    center/cover;
+  width: 40vw;
+  height: 250px;
+}
 
 .gallery {
-  background: url("../Resources/Gallery/Gallery_Showcase.jpg") no-repeat center top/contain;
+  background: url("../Resources/Gallery/Gallery_Showcase.jpg") no-repeat center
+    top/contain;
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -823,29 +1042,38 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .gallery h1 {
-    font-size: 4rem;
-    color: white;
-    font-family: "Gilroy-Medium", sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.45rem;
-    line-height: 1.5;
-    text-shadow: 6px 2px 0.2rem #1a1a1a;
-    z-index: 5; }
-  .gallery .spacing {
-    letter-spacing: 1.2rem; }
-  .gallery .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 10%, rgba(0, 0, 0, 0.7) 100%) no-repeat center center/cover;
-    z-index: 2;
-    mix-blend-mode: luminosity; }
+  align-items: center;
+}
+.gallery h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.45rem;
+  line-height: 1.5;
+  text-shadow: 6px 2px 0.2rem #1a1a1a;
+  z-index: 5;
+}
+.gallery .spacing {
+  letter-spacing: 1.2rem;
+}
+.gallery .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 0.7) 100%
+    )
+    no-repeat center center/cover;
+  z-index: 2;
+  mix-blend-mode: luminosity;
+}
 
 .GalleryWrap {
   padding: 6rem;
@@ -853,89 +1081,123 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   grid-template-rows: auto;
-  image-rendering: auto; }
-  .GalleryWrap .zoom {
-    transform: scale(1);
-    transition: transform 0.4s cubic-bezier(0.65, 0.05, 0.36, 1); }
-    .GalleryWrap .zoom:hover {
-      transform: scale(1.4); }
-  .GalleryWrap .box1 {
-    background: url("../Resources/Gallery/box1.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box2 {
-    background: url("../Resources/Gallery/box2.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box3 {
-    background: url("../Resources/Gallery/box3.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box4 {
-    background: url("../Resources/Gallery/box4.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box5 {
-    background: url("../Resources/Gallery/box5.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box6 {
-    background: url("../Resources/Gallery/box6.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box7 {
-    background: url("../Resources/Gallery/box7.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box8 {
-    background: url("../Resources/Gallery/box8.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box9 {
-    background: url("../Resources/Gallery/box9.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box10 {
-    background: url("../Resources/Gallery/box10.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box11 {
-    background: url("../Resources/Gallery/box11.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box12 {
-    background: url("../Resources/Gallery/box12.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box13 {
-    background: url("../Resources/Gallery/box13.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box14 {
-    background: url("../Resources/Gallery/box14.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box15 {
-    background: url("../Resources/Gallery/box15.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box16 {
-    background: url("../Resources/Gallery/box16.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 25vw; }
-  .GalleryWrap .box17 {
-    background: url("../Resources/Gallery/box17.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 22vw; }
-  .GalleryWrap .box18 {
-    background: url("../Resources/Gallery/box18.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 22vw; }
-  .GalleryWrap .box19 {
-    background: url("../Resources/Gallery/box19.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 22vw; }
-  .GalleryWrap .box20 {
-    background: url("../Resources/Gallery/box20.jpg") no-repeat center center/cover;
-    width: 100%;
-    height: 22vw; }
+  image-rendering: auto;
+}
+.GalleryWrap .zoom {
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.GalleryWrap .zoom:hover {
+  transform: scale(1.4);
+}
+.GalleryWrap .box1 {
+  background: url("../Resources/Gallery/box1.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box2 {
+  background: url("../Resources/Gallery/box2.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box3 {
+  background: url("../Resources/Gallery/box3.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box4 {
+  background: url("../Resources/Gallery/box4.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box5 {
+  background: url("../Resources/Gallery/box5.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box6 {
+  background: url("../Resources/Gallery/box6.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box7 {
+  background: url("../Resources/Gallery/box7.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box8 {
+  background: url("../Resources/Gallery/box8.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box9 {
+  background: url("../Resources/Gallery/box9.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box10 {
+  background: url("../Resources/Gallery/box10.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box11 {
+  background: url("../Resources/Gallery/box11.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box12 {
+  background: url("../Resources/Gallery/box12.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box13 {
+  background: url("../Resources/Gallery/box13.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box14 {
+  background: url("../Resources/Gallery/box14.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box15 {
+  background: url("../Resources/Gallery/box15.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box16 {
+  background: url("../Resources/Gallery/box16.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 25vw;
+}
+.GalleryWrap .box17 {
+  background: url("../Resources/Gallery/box17.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 22vw;
+}
+.GalleryWrap .box18 {
+  background: url("../Resources/Gallery/box18.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 22vw;
+}
+.GalleryWrap .box19 {
+  background: url("../Resources/Gallery/box19.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 22vw;
+}
+.GalleryWrap .box20 {
+  background: url("../Resources/Gallery/box20.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 22vw;
+}
