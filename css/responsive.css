@@ -208,6 +208,12 @@
   .modelinfo .infoB .nopadding {
     padding: 0rem 0rem 0rem 1.25rem;
   }
+  .performanceinfo .l-heading,
+  .designinfo .l-heading {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
   .performanceinfo {
     padding: 1rem 2rem;
   }
@@ -365,11 +371,12 @@
   }
   .gallery h1 {
     font-size: 1rem;
-    margin-right: -1.5rem;
+    margin-right: -0.8rem;
     text-align: right;
+    letter-spacing: 0.2rem;
   }
   .gallery h1 .spacing {
-    margin-left: 1.5rem;
+    margin-left: 0.8rem;
   }
   .GalleryWrap {
     padding: 1rem;
@@ -503,18 +510,25 @@
     padding-bottom: 2rem;
   }
   header .homepage {
-    justify-content: center;
+    justify-content: flex-start;
   }
   header .homepage .showcase-info {
-    margin-top: 4rem;
+    margin-top: 5.4rem;
     padding: 0rem 1rem;
+    padding-left: 1.5rem;
   }
   header .homepage .showcase-info h1 {
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.35rem;
+  }
+  header .homepage .showcase-info h1 .mobile {
+    display: block;
   }
   header .homepage .showcase-info h3 {
     font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
   }
   header .homepage .showcase-info h3 br {
     display: none;
