@@ -210,8 +210,6 @@
   }
   .performanceinfo .l-heading,
   .designinfo .l-heading {
-    font-family: "Gilroy-Bold", sans-serif;
-    font-weight: 400;
     letter-spacing: 0.1rem;
   }
   .performanceinfo {

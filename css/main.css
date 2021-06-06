@@ -2,6 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import url("https://api.fontshare.com/css?f[]=general-sans@500&display=swap");
 @import url("https://api.fontshare.com/css?f[]=satoshi@500&display=swap");
+@font-face {
+  font-family: "trapbold";
+  src: url("../Fonts/trap-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "trapmedium";
+  src: url("../Fonts/trap-medium-webfont.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -293,6 +307,7 @@ header .msports p {
 
 .performanceinfo .l-heading,
 .designinfo .l-heading {
+  font-family: "trapbold";
   letter-spacing: 0.25rem;
 }
 
@@ -377,6 +392,9 @@ header .msports p {
 }
 .gridlines > div > div:first-child > div:first-child:hover {
   transform: scale(1.2);
+}
+.gridlines h2 {
+  font-family: "trapmedium";
 }
 
 .MPowerwrap {
