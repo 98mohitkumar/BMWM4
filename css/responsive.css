@@ -6,6 +6,9 @@
   header nav a.current::before {
     display: none !important;
   }
+  .borderbottom:hover {
+    cursor: default;
+  }
   .gallery {
     height: 42vw;
     background-attachment: scroll;
