@@ -17,18 +17,26 @@
     <meta property="og:site_name" content="BMW M4 Coupe">
     <script src="https://kit.fontawesome.com/3a7346116e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="../dist/Resources/Favicon/favicon.svg">
 </head>
 
 <body>
     <header>
         <div class="navwrap">
-            <nav>
+            <nav class="navbar">
                 <h2 class="logo">The M4 Coupe</h2>
-                <ul>
+                <ul class="ExpandNav">
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="Features.html">Features</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                 </ul>
+
+                <div class="hamwrap">
+                    <div class="first ham"></div>
+                    <div class="second ham"></div>
+                    <div class="third ham"></div>
+                </div>
             </nav>
         </div>
 
@@ -54,13 +62,17 @@
             <li><a href="#Design">Design</a></li>
         </ul>
     </div>
+
+    <div class="modelstitle" style="display: none;">
+        <h2 class="m-heading">Models</h2>
+    </div>
     <div class="modelwrap" id="Models">
         <div class="models"></div>
         <div class="modelinfo">
             <div class="infoA">
                 <p style="font-size: 1.75rem">
-                    Drive the new embodiment of<br />
-                    style, performance, and high-powered <br> excitement.
+                    Drive the new embodiment of
+                    style, performance, and high-powered excitement.
                 </p>
             </div>
 
@@ -72,9 +84,8 @@
                             <th>
                                 HP
                             </th>
-                            <th>
+                            <th class="nopadding">
                                 0-60 MPH
-                                <span class="model-detail-summary__tooltip"> </span>
                             </th>
                         </tr>
                     </thead>
@@ -84,7 +95,7 @@
                                 M4 Competition Coupe
                             </th>
                             <td>503</td>
-                            <td>
+                            <td class="nopadding">
                                 3.8 sec
                             </td>
                         </tr>
@@ -94,7 +105,7 @@
                                 M4 Coupe
                             </th>
                             <td>473</td>
-                            <td>
+                            <td class="nopadding">
                                 4.1 sec
                             </td>
                         </tr>

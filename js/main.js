@@ -1,4 +1,5 @@
 // Smooth Scrolling with offset
+
 $("ul li a, .btn a, .logo a").on("click", function (event) {
   if (this.hash !== "") {
     event.preventDefault();
@@ -15,6 +16,7 @@ $("ul li a, .btn a, .logo a").on("click", function (event) {
 });
 
 // Remove anchor from URl bar
+
 var Webflow = Webflow || [];
 Webflow.push(function () {
   $("a").click(function () {
@@ -24,7 +26,46 @@ Webflow.push(function () {
   });
 });
 
-// Features
+//  Mobile Navigation Bar
+
+const HamButton = document.querySelector(".hamwrap");
+
+const ExpandNav = document.querySelector(".ExpandNav");
+
+const NavBar = document.querySelector(".navwrap");
+
+const cross = document.querySelector(".first");
+
+const cross1 = document.querySelector(".second");
+
+const cross2 = document.querySelector(".third");
+
+HamButton.addEventListener("click", () => {
+  ExpandNav.classList.toggle("ExpandNav_active");
+
+  NavBar.classList.toggle("navbar_active");
+
+  cross.classList.toggle("f");
+
+  cross1.classList.toggle("s");
+
+  cross2.classList.toggle("t");
+});
+
+ExpandNav.addEventListener("click", () => {
+  HamButton.click();
+});
+
+window.addEventListener("scroll", () => {
+  ExpandNav.classList.remove("ExpandNav_active");
+  NavBar.classList.remove("navbar_active");
+  cross.classList.remove("f");
+  cross1.classList.remove("s");
+  cross2.classList.remove("t");
+});
+
+// Features and Specifications
+
 const featuresbutton = document.querySelector(".featuresinfo");
 
 const specificationsbutton = document.querySelector(".specifications");
@@ -110,6 +151,8 @@ const arroweightexpanded = document.querySelector(".arroweight");
 const arrownineexpanded = document.querySelector(".arrownine");
 
 const arrowtenexpanded = document.querySelector(".arrowten");
+
+// Functions
 
 expandedperf.addEventListener("click", () => {
   expandableperf.classList.toggle("FeatureOneA-expanded");

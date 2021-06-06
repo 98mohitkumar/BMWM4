@@ -1,6 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import url("https://api.fontshare.com/css?f[]=general-sans@500&display=swap");
+@import url("https://api.fontshare.com/css?f[]=satoshi@500&display=swap");
 *,
 *::before,
 *::after {
@@ -9,8 +10,8 @@
   box-sizing: border-box;
 }
 
-body {
-  image-rendering: auto;
+html {
+  -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar {
@@ -31,6 +32,8 @@ body {
 }
 
 body {
+  text-rendering: auto;
+  image-rendering: auto;
   line-height: 1.2;
 }
 
@@ -86,6 +89,7 @@ header .navwrap {
   position: absolute;
   width: 100%;
   z-index: 6;
+  transition: background-color 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 header nav {
   display: flex;
@@ -99,6 +103,9 @@ header nav {
 header nav h2 {
   font-family: "Gilroy-Medium", sans-serif;
   font-weight: 400;
+}
+header nav .hamwrap {
+  display: none;
 }
 header .logo {
   display: inline-block;
@@ -271,6 +278,12 @@ header .msports p {
   transform: scaleX(1);
 }
 
+.modelstitle .m-heading,
+.performanceinfo .m-heading,
+.designinfo .m-heading {
+  font-family: "Satoshi", sans-serif;
+}
+
 .models {
   background: url("../Resources/Main/M4_models.jpg") no-repeat center
     center/cover;
@@ -285,7 +298,7 @@ header .msports p {
   justify-content: center;
 }
 .modelinfo .infoA {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -334,6 +347,8 @@ header .msports p {
     );
   background-repeat: repeat;
   padding: 3rem 2.5rem;
+  margin-left: -0.25rem;
+  padding-left: 2.75rem;
 }
 .gridlines > div {
   margin-bottom: 2rem;
@@ -592,6 +607,8 @@ footer .btn a {
   background-color: #1c69d3;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  text-align: center;
+  width: 164px;
 }
 footer .footerwrap {
   height: 100%;
@@ -980,9 +997,11 @@ footer .social-links a:last-child {
 .Specs .box3 {
   padding: 4rem 6rem;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 5rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0rem;
+  image-rendering: -webkit-optimize-contrast;
 }
 .Specs .ExteriorShowcase {
   display: grid;
@@ -990,12 +1009,13 @@ footer .social-links a:last-child {
   grid-template-areas:
     "ext1 ext1"
     "ext2 ext3";
-  image-rendering: auto;
+  gap: 2rem 0rem;
+  align-self: flex-start;
 }
 .Specs .ExteriorShowcase .ext1 {
   background: url("../Resources/Main/M4_Ex1.webp") no-repeat center center/cover;
-  width: 40vw;
-  height: 250px;
+  width: auto;
+  height: 18vw;
   margin: auto;
 }
 .Specs .ExteriorShowcase .ext1-wrap {
@@ -1003,8 +1023,8 @@ footer .social-links a:last-child {
 }
 .Specs .ExteriorShowcase .ext2 {
   background: url("../Resources/Main/M4_Ex2.webp") no-repeat center center/cover;
-  width: 20vw;
-  height: 250px;
+  width: auto;
+  height: 18vw;
   margin: auto;
 }
 .Specs .ExteriorShowcase .ext2-wrap {
@@ -1012,24 +1032,21 @@ footer .social-links a:last-child {
 }
 .Specs .ExteriorShowcase .ext3 {
   background: url("../Resources/Main/M4_Ex3.webp") no-repeat center center/cover;
-  width: 20vw;
-  height: 250px;
+  width: auto;
+  height: 18vw;
   margin: auto;
 }
 .Specs .ExteriorShowcase .ext3-wrap {
   grid-area: ext3;
 }
-.Specs .int-wrap {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Specs .InteriorShowcase {
+  align-self: center;
 }
 .Specs .int {
   background: url("../Resources/Main/M4_interior.webp") no-repeat center
     center/cover;
-  width: 40vw;
-  height: 250px;
+  width: auto;
+  height: 18vw;
 }
 
 .gallery {
