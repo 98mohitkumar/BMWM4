@@ -386,6 +386,9 @@ header .msports p {
 .gridlines > div:last-child {
   margin-bottom: 0rem;
 }
+.gridlines > div > div:nth-child(2) {
+  padding-right: 4rem;
+}
 .gridlines > div > div:first-child > div:first-child {
   transform: scale(1);
   transition: transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
@@ -393,8 +396,15 @@ header .msports p {
 .gridlines > div > div:first-child > div:first-child:hover {
   transform: scale(1.2);
 }
-.gridlines h2 {
+.gridlines .container h2 {
   font-family: "trapmedium";
+  font-size: 2.6rem;
+}
+.gridlines .container p {
+  font-size: 1.1rem;
+}
+.gridlines .container br {
+  display: none;
 }
 
 .MPowerwrap {

@@ -86,6 +86,9 @@
     transform: scale(1);
     transition: none;
   }
+  .gridlines > div > div:nth-child(2) {
+    padding-right: 2rem;
+  }
   .models,
   .performance,
   .design {
@@ -96,9 +99,6 @@
   .Suspension,
   .Brakes {
     min-height: 40vw;
-  }
-  .gridlines .container {
-    padding: 0rem 2rem 0rem 0rem !important;
   }
   .Designwrap p {
     width: 90%;
@@ -111,6 +111,18 @@
   .Style,
   .Seats {
     min-height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  span.mobiletextwrap {
+    display: block;
+  }
+  .gridlines .container h2 {
+    font-size: 2.25rem;
+  }
+  .gridlines .container p {
+    font-size: 1rem;
   }
 }
 
@@ -226,6 +238,9 @@
     padding: 2rem 1.5rem;
     margin-left: -0.25rem;
     padding-left: 1.75rem;
+  }
+  .gridlines > div > div:nth-child(2) {
+    padding-right: 0rem;
   }
   .gridlines .l-heading {
     font-size: 1.5rem;
@@ -446,9 +461,6 @@
   .Features .details {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  .Features .mobiletextwrap {
-    display: block;
   }
   .borderbottom h2 {
     font-size: 1.8rem;
