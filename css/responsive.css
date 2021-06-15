@@ -82,6 +82,10 @@
     display: none;
     transition: none;
   }
+  .tableTH {
+    padding-left: 1rem !important;
+    padding-right: 2rem !important;
+  }
   .gridlines > div > div:first-child > div:first-child:hover {
     transform: scale(1);
     transition: none;
@@ -213,7 +217,7 @@
     font-size: 1.25rem !important;
   }
   .modelinfo .infoB {
-    padding: 1rem 0rem 1rem 2rem;
+    padding: 1rem;
   }
   .modelinfo .infoB th,
   .modelinfo .infoB td {
@@ -235,12 +239,18 @@
     padding: 0.25rem 0rem;
   }
   .gridlines {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     margin-left: -0.25rem;
-    padding-left: 1.75rem;
+    padding-left: 2.25rem;
   }
   .gridlines > div > div:nth-child(2) {
     padding-right: 0rem;
+  }
+  .gridlines > div {
+    margin-bottom: 2rem;
+  }
+  .gridlines > div:last-child {
+    margin-bottom: 0rem;
   }
   .gridlines .l-heading {
     font-size: 1.5rem;
@@ -588,6 +598,10 @@
     padding: 0rem;
     padding-top: 2rem;
   }
+  .modelinfo .tableTH {
+    padding-left: 0rem !important;
+    padding-right: 2rem !important;
+  }
   .performanceinfo br,
   .designinfo br {
     display: none;
@@ -607,7 +621,7 @@
     grid-template-columns: 1fr;
   }
   .gridlines {
-    padding: 2rem 1rem;
+    padding: 1.25rem;
     background-image: repeating-linear-gradient(
         to right,
         black 0,
@@ -632,13 +646,19 @@
       -webkit-repeating-linear-gradient(270deg, black 0, black 1px, transparent
             1px, transparent 80px);
     margin-left: -0.25rem;
-    padding-left: 1.25rem;
+    padding-left: 1.5rem;
   }
   .gridlines p {
     font-size: 0.8rem !important;
   }
+  .gridlines > div {
+    margin-bottom: 1.25rem;
+  }
   .gridlines .container {
     padding: 2rem !important;
+  }
+  .gridlines .container h2 {
+    font-size: 1.5rem;
   }
   .MPower,
   .Transmission,

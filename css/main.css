@@ -71,6 +71,11 @@ th {
   font-size: 1.25rem;
 }
 
+.tableTH {
+  padding-left: 0rem;
+  padding-right: 3rem;
+}
+
 td {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -376,12 +381,12 @@ header .msports p {
     transparent 1px, transparent 120px, -webkit-repeating-linear-gradient 270deg,
     black 0, black 1px, transparent 1px, transparent 120px;
   background-repeat: repeat;
-  padding: 3rem 2.5rem;
+  padding: 2.5rem;
   margin-left: -0.25rem;
   padding-left: 2.75rem;
 }
 .gridlines > div {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .gridlines > div:last-child {
   margin-bottom: 0rem;
@@ -564,7 +569,7 @@ header .msports p {
 }
 
 .Evolveinfo {
-  padding: 1.5rem 1rem;
+  padding: 2rem !important;
   text-align: center;
 }
 .Evolveinfo h2 {
@@ -584,7 +589,7 @@ header .msports p {
 }
 
 .Aeroinfo {
-  padding: 1.5rem 1rem;
+  padding: 2rem !important;
   text-align: center;
 }
 .Aeroinfo h2 {
@@ -604,7 +609,7 @@ header .msports p {
 }
 
 .Styleinfo {
-  padding: 1.5rem 1rem;
+  padding: 2rem !important;
   text-align: center;
 }
 .Styleinfo h2 {
@@ -624,7 +629,7 @@ header .msports p {
 }
 
 .Seatsinfo {
-  padding: 1.5rem 1rem;
+  padding: 2rem !important;
   text-align: center;
 }
 .Seatsinfo h2 {
