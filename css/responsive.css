@@ -359,7 +359,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     cursor: pointer;
   }
   header nav .ham {
@@ -371,21 +371,20 @@
   }
   header nav .hamwrap .first {
     width: 25px;
-    margin-left: 10px;
-    transition: display 0.4s ease-out;
+    align-self: flex-end;
   }
   header nav .hamwrap .f {
-    display: none;
+    width: 17.5px;
+    align-self: flex-start;
+    transform: rotate(45deg) translate(4.5px, 1.75px);
   }
   header nav .hamwrap .s {
-    position: absolute;
-    top: 26px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
+    align-self: center;
   }
   header nav .hamwrap .t {
-    position: absolute;
-    bottom: 26px;
-    transform: rotate(135deg);
+    width: 17.5px;
+    transform: rotate(45deg) translate(-5px, -1.45px);
   }
   header .gallery {
     background-size: 210%;
@@ -396,13 +395,13 @@
     display: none;
   }
   .gallery h1 {
-    font-size: 1rem;
-    margin-right: -0.8rem;
-    text-align: right;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.4rem;
+  }
+  .gallery h1 > br:nth-child(2) {
+    display: block;
   }
   .gallery h1 .spacing {
-    margin-left: 0.8rem;
+    margin-left: 0rem;
   }
   .GalleryWrap {
     padding: 1rem;
