@@ -480,8 +480,6 @@
     grid-template-columns: 1fr; }
   .gridlines {
     padding: 1.25rem;
-    background-image: repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 80px), repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 80px);
-    background-image: -webkit-repeating-linear-gradient(0deg, black 0, black 1px, transparent 1px, transparent 80px), -webkit-repeating-linear-gradient(270deg, black 0, black 1px, transparent 1px, transparent 80px);
     margin-left: -0.25rem;
     padding-left: 1.5rem; }
     .gridlines > div {

@@ -294,7 +294,7 @@ header {
 .gridlines {
   background-color: #151515;
   background-image: repeating-linear-gradient(to right, #979797 0, #979797 1px, transparent 1px, transparent 120px), repeating-linear-gradient(to bottom, #979797 0, #979797 1px, transparent 1px, transparent 120px);
-  background-image: -webkit-repeating-linear-gradient 0deg, #979797 0, #979797 1px, transparent 1px, transparent 120px, -webkit-repeating-linear-gradient 270deg, #979797 0, #979797 1px, transparent 1px, transparent 120px;
+  background-image: -webkit-repeating-linear-gradient(0deg, #979797 0, #979797 1px, transparent 1px, transparent 120px), -webkit-repeating-linear-gradient(270deg, #979797 0, #979797 1px, transparent 1px, transparent 120px);
   background-repeat: repeat;
   padding: 2.5rem;
   margin-left: -0.25rem;
