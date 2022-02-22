@@ -889,6 +889,7 @@ footer .social-links a:last-child {
 }
 
 .options > div h2 {
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
   font-family: "Gilroy-Bold", sans-serif;
   font-weight: 400;
 }
