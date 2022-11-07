@@ -1382,7 +1382,7 @@ footer .social-links a:last-child {
 
 .gallery {
   background: url("../Resources/Gallery/Gallery_Showcase.jpg") no-repeat center
-    top/contain;
+    top/cover;
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
