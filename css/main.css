@@ -1,7 +1,8 @@
-@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 @import url("https://api.fontshare.com/css?f[]=general-sans@500&display=swap");
 @import url("https://api.fontshare.com/css?f[]=satoshi@500&display=swap");
+
 @font-face {
   font-family: "trapbold";
   src: url("../Fonts/trap-bold-webfont.woff") format("woff");
@@ -66,8 +67,8 @@ p {
 }
 
 th {
-  font-family: "Gilroy-Medium", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
   padding: 1rem;
   font-size: 1.25rem;
 }
@@ -85,14 +86,14 @@ td {
 }
 
 .l-heading {
-  font-family: "Gilroy-Medium", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
   font-size: 2.25rem;
 }
 
 .m-heading {
-  font-family: "Gilroy-Medium", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
@@ -131,7 +132,7 @@ header nav {
 }
 
 header nav h2 {
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
 
@@ -213,8 +214,7 @@ header a.current::before {
 
 header .homepage {
   position: relative;
-  background: url("../Resources/Main/Showcase_M4.jpg") no-repeat center bottom
-    40% / cover;
+  background: url("../Resources/Main/Showcase_M4.jpg") no-repeat center bottom 40% / cover;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -239,26 +239,17 @@ header .homepage .gradient {
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(
-      linear,
+  background: -webkit-gradient(linear,
       left top,
       left bottom,
       color-stop(20%, rgba(226, 39, 24, 0.3)),
-      to(rgba(0, 102, 177, 0.3))
-    )
-    no-repeat center center/cover;
-  background: linear-gradient(
-      180deg,
+      to(rgba(0, 102, 177, 0.3))) no-repeat center center/cover;
+  background: linear-gradient(180deg,
       rgba(226, 39, 24, 0.3) 20%,
-      rgba(0, 102, 177, 0.3) 100%
-    )
-    no-repeat center center/cover;
-  background: -webkit-linear-gradient(
-      270deg,
+      rgba(0, 102, 177, 0.3) 100%) no-repeat center center/cover;
+  background: -webkit-linear-gradient(270deg,
       rgba(226, 39, 24, 0.3) 20%,
-      rgba(0, 102, 177, 0.3) 100%
-    )
-    no-repeat center center/cover;
+      rgba(0, 102, 177, 0.3) 100%) no-repeat center center/cover;
   z-index: 2;
   mix-blend-mode: color;
 }
@@ -271,20 +262,20 @@ header .homepage .showcase-info {
 
 header .homepage .showcase-info h1 {
   font-size: 5rem;
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
 }
 
 header .homepage .showcase-info h3 {
   font-size: 2rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   margin-top: 0.5rem;
 }
 
 header .homepage .showcase-info .focus {
   font-size: 6rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   margin-top: 1rem;
 }
@@ -299,8 +290,7 @@ header .msports {
 }
 
 header .msports .mlogo {
-  background: url("../Resources/Main/M_perf.png") no-repeat center
-    center/contain;
+  background: url("../Resources/Main/M_perf.png") no-repeat center center/contain;
   width: 215px;
   height: 35px;
 }
@@ -367,7 +357,6 @@ header .msports p {
 .modelstitle .m-heading,
 .performanceinfo .m-heading,
 .designinfo .m-heading {
-  font-family: "Satoshi", sans-serif;
   font-size: 2rem;
 }
 
@@ -378,8 +367,7 @@ header .msports p {
 }
 
 .models {
-  background: url("../Resources/Main/M4_models.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/M4_models.jpg") no-repeat center center/cover;
   width: 100%;
   height: 90vh;
 }
@@ -428,8 +416,7 @@ header .msports p {
 }
 
 .performance {
-  background: url("../Resources/Main/Performance_M4.jpg") no-repeat center
-    bottom/cover;
+  background: url("../Resources/Main/Performance_M4.jpg") no-repeat center bottom/cover;
   width: 100%;
   height: 100vh;
 }
@@ -440,30 +427,29 @@ header .msports p {
   padding: 2.5rem;
 }
 
-.gridlines > div {
+.gridlines>div {
   margin-bottom: 2.5rem;
 }
 
-.gridlines > div:last-child {
+.gridlines>div:last-child {
   margin-bottom: 0rem;
 }
 
-.gridlines > div > div:nth-child(2) {
+.gridlines>div>div:nth-child(2) {
   padding-right: 4rem;
 }
 
-.gridlines > div > div:first-child > div:first-child {
+.gridlines>div>div:first-child>div:first-child {
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform 0.8s
-    cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: -webkit-transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86),
     -webkit-transform 0.8s cubic-bezier(0.79, 0.14, 0.15, 0.86);
 }
 
-.gridlines > div > div:first-child > div:first-child:hover {
+.gridlines>div>div:first-child>div:first-child:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
@@ -489,8 +475,7 @@ header .msports p {
 }
 
 .MPower {
-  background: url("../Resources/Main/Performance_MPower.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Performance_MPower.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 60vh;
   position: relative;
@@ -498,13 +483,11 @@ header .msports p {
 
 .MPower .gradient {
   position: absolute;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    color-stop(25%, black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear,
+      right top,
+      left top,
+      color-stop(25%, black),
+      to(rgba(0, 0, 0, 0)));
   background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
   background: -webkit-linear-gradient(180deg, black 25%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
@@ -537,21 +520,18 @@ header .msports p {
 }
 
 .Transmission {
-  background: url("../Resources/Main/Performance_Transmission.jpg") no-repeat
-    center center/cover;
+  background: url("../Resources/Main/Performance_Transmission.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 60vh;
 }
 
 .Transmission .gradient {
   position: absolute;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    color-stop(25%, black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear,
+      right top,
+      left top,
+      color-stop(25%, black),
+      to(rgba(0, 0, 0, 0)));
   background: linear-gradient(270deg, black 25%, rgba(0, 0, 0, 0) 100%);
   background: -webkit-linear-gradient(180deg, black 25%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
@@ -584,21 +564,18 @@ header .msports p {
 }
 
 .Suspension {
-  background: url("../Resources/Main/Performance_Suspension.jpg") no-repeat
-    center center/cover;
+  background: url("../Resources/Main/Performance_Suspension.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 60vh;
 }
 
 .Suspension .gradient {
   position: absolute;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    color-stop(14%, black),
-    color-stop(70%, rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear,
+      right top,
+      left top,
+      color-stop(14%, black),
+      color-stop(70%, rgba(0, 0, 0, 0)));
   background: linear-gradient(270deg, black 14%, rgba(0, 0, 0, 0) 70%);
   background: -webkit-linear-gradient(180deg, black 14%, rgba(0, 0, 0, 0) 70%);
   width: 100%;
@@ -631,21 +608,18 @@ header .msports p {
 }
 
 .Brakes {
-  background: url("../Resources/Main/Performance_Brakes.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Performance_Brakes.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 60vh;
 }
 
 .Brakes .gradient {
   position: absolute;
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    color-stop(20%, black),
-    color-stop(80%, rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear,
+      right top,
+      left top,
+      color-stop(20%, black),
+      color-stop(80%, rgba(0, 0, 0, 0)));
   background: linear-gradient(270deg, black 20%, rgba(0, 0, 0, 0) 80%);
   background: -webkit-linear-gradient(180deg, black 20%, rgba(0, 0, 0, 0) 80%);
   width: 100%;
@@ -688,8 +662,7 @@ header .msports p {
 }
 
 .design {
-  background: url("../Resources/Main/Design_M4.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Design_M4.jpg") no-repeat center center/cover;
   width: 100%;
   height: 60vh;
 }
@@ -700,8 +673,7 @@ header .msports p {
 }
 
 .Evolve {
-  background: url("../Resources/Main/Design_Evolve.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Design_Evolve.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 80vh;
 }
@@ -721,8 +693,7 @@ header .msports p {
 }
 
 .Aero {
-  background: url("../Resources/Main/Design_Aero.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Design_Aero.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 80vh;
 }
@@ -742,8 +713,7 @@ header .msports p {
 }
 
 .Style {
-  background: url("../Resources/Main/Design_Style.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Design_Style.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 80vh;
 }
@@ -763,8 +733,7 @@ header .msports p {
 }
 
 .Seats {
-  background: url("../Resources/Main/Design_Seats.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Design_Seats.jpg") no-repeat center center/cover;
   width: 100%;
   min-height: 80vh;
 }
@@ -854,8 +823,7 @@ footer .social-links a:last-child {
 }
 
 .FeaturesShowcase {
-  background: url("../Resources/Main/Features_Showcase.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/Features_Showcase.jpg") no-repeat center center/cover;
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
@@ -874,7 +842,7 @@ footer .social-links a:last-child {
   box-shadow: 0px 0px 10rem 10rem rgba(0, 0, 0, 0.1);
 }
 
-.options > div {
+.options>div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,10 +856,10 @@ footer .social-links a:last-child {
   cursor: pointer;
 }
 
-.options > div h2 {
+.options>div h2 {
   font-size: clamp(1.25rem, 4vw, 1.5rem);
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
 }
 
 .options .featuresinfo {
@@ -940,7 +908,7 @@ footer .social-links a:last-child {
 .Features-Title {
   text-align: center;
   font-size: 3rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
 
@@ -970,7 +938,7 @@ footer .social-links a:last-child {
 
 .FeatureTitle h2 {
   font-size: 2rem;
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
 
@@ -1044,8 +1012,8 @@ footer .social-links a:last-child {
 
 .borderbottom h2 {
   font-size: 2.5rem;
-  font-family: "Gilroy-Bold", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -1260,8 +1228,8 @@ footer .social-links a:last-child {
 .Specs h2 {
   font-size: 3rem;
   text-align: center;
-  font-family: "Gilroy-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
 }
 
 .Specs h4 {
@@ -1270,14 +1238,14 @@ footer .social-links a:last-child {
 
 .Specs h3 {
   font-size: 1rem;
-  font-family: "Gilroy-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
 .Specs p {
   font-size: 1.15rem;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   margin-bottom: 4rem;
 }
@@ -1374,15 +1342,13 @@ footer .social-links a:last-child {
 }
 
 .Specs .int {
-  background: url("../Resources/Main/M4_interior.webp") no-repeat center
-    center/cover;
+  background: url("../Resources/Main/M4_interior.webp") no-repeat center center/cover;
   width: auto;
   height: 18vw;
 }
 
 .gallery {
-  background: url("../Resources/Gallery/Gallery_Showcase.jpg") no-repeat center
-    top/cover;
+  background: url("../Resources/Gallery/Gallery_Showcase.jpg") no-repeat center top/cover;
   height: 70vh;
   width: 100%;
   background-attachment: fixed;
@@ -1403,7 +1369,7 @@ footer .social-links a:last-child {
 .gallery h1 {
   font-size: 4rem;
   color: white;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
   letter-spacing: 0.45rem;
   line-height: 1.5;
@@ -1423,26 +1389,17 @@ footer .social-links a:last-child {
   bottom: 0;
   right: 0;
   left: 0;
-  background: -webkit-gradient(
-      linear,
+  background: -webkit-gradient(linear,
       left top,
       left bottom,
       color-stop(10%, rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.7))
-    )
-    no-repeat center center/cover;
-  background: linear-gradient(
-      180deg,
+      to(rgba(0, 0, 0, 0.7))) no-repeat center center/cover;
+  background: linear-gradient(180deg,
       rgba(0, 0, 0, 0.5) 10%,
-      rgba(0, 0, 0, 0.7) 100%
-    )
-    no-repeat center center/cover;
-  background: -webkit-linear-gradient(
-      270deg,
+      rgba(0, 0, 0, 0.7) 100%) no-repeat center center/cover;
+  background: -webkit-linear-gradient(270deg,
       rgba(0, 0, 0, 0.5) 10%,
-      rgba(0, 0, 0, 0.7) 100%
-    )
-    no-repeat center center/cover;
+      rgba(0, 0, 0, 0.7) 100%) no-repeat center center/cover;
   z-index: 2;
   mix-blend-mode: luminosity;
 }
@@ -1529,79 +1486,67 @@ footer .social-links a:last-child {
 }
 
 .GalleryWrap .box10 {
-  background: url("../Resources/Gallery/box10.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box10.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box11 {
-  background: url("../Resources/Gallery/box11.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box11.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box12 {
-  background: url("../Resources/Gallery/box12.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box12.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box13 {
-  background: url("../Resources/Gallery/box13.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box13.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box14 {
-  background: url("../Resources/Gallery/box14.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box14.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box15 {
-  background: url("../Resources/Gallery/box15.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box15.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box16 {
-  background: url("../Resources/Gallery/box16.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box16.jpg") no-repeat center center/cover;
   width: 100%;
   height: 25vw;
 }
 
 .GalleryWrap .box17 {
-  background: url("../Resources/Gallery/box17.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box17.jpg") no-repeat center center/cover;
   width: 100%;
   height: 22vw;
 }
 
 .GalleryWrap .box18 {
-  background: url("../Resources/Gallery/box18.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box18.jpg") no-repeat center center/cover;
   width: 100%;
   height: 22vw;
 }
 
 .GalleryWrap .box19 {
-  background: url("../Resources/Gallery/box19.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box19.jpg") no-repeat center center/cover;
   width: 100%;
   height: 22vw;
 }
 
 .GalleryWrap .box20 {
-  background: url("../Resources/Gallery/box20.jpg") no-repeat center
-    center/cover;
+  background: url("../Resources/Gallery/box20.jpg") no-repeat center center/cover;
   width: 100%;
   height: 22vw;
 }
-/*# sourceMappingURL=main.css.map */
