@@ -54,7 +54,7 @@
   }
 
   .Features-Grid {
-    padding: 4rem 2rem;
+    padding: 4rem 0rem;
   }
 
   .Specs {
@@ -65,7 +65,7 @@
   .Specs .box1,
   .Specs .box2,
   .Specs .box3 {
-    padding: 4rem 3rem;
+    padding: 4rem 0rem;
   }
 
   .Specs .box3 {
@@ -206,7 +206,7 @@
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 0rem;
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
 
   .Specs {
@@ -627,7 +627,7 @@
   }
 
   .Features-Grid {
-    padding: 3rem 1rem;
+    padding: 3rem 0rem;
   }
 
   .Features .details {
@@ -673,7 +673,7 @@
   .Specs .box1,
   .Specs .box2,
   .Specs .box3 {
-    padding: 3rem 1.25rem;
+    padding: 3rem 1rem;
   }
 
   .Specs .box1 {
